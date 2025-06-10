@@ -2,13 +2,14 @@
 
 namespace Estacionamento
 {
+
     public class Veiculo
     {
-        public string Placa; // Gerada aleatoriamente com o Guid
-        public string Modelo;
-        public string Marca;
-        public string Proprietario; // Corrigido nome da variável
-        public string Cor;
+        public string Placa { get; set; } // Gerada aleatoriamente com o Guid
+        public string Modelo { get; set; }
+        public string Marca { get; set; }
+        public string Proprietario { get; set; } // Corrigido nome da variável
+        public string Cor { get; set; }
     }
 
     public class Vaga
@@ -47,5 +48,33 @@ namespace Estacionamento
 
         public double ValorPago;
     }
+
+    public class InclirNaVaga
+    {
+
+    }
+
+
+    class program
+    {
+        public static void Menu(int valor)
+        {
+            Console.Clear();
+            
+            Console.WriteLine("");
+            Console.WriteLine("");
+            Console.WriteLine("");
+            Console.WriteLine("");
+            Console.WriteLine("");
+            Console.WriteLine("");
+            Console.WriteLine("");
+            Console.WriteLine("");
+        }
+
+
+        public static void Main(string[] args)
+        {
+
+        }
+    }
 }
-teste
