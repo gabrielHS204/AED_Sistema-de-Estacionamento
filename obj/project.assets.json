@@ -8,19 +8,19 @@
     "net9.0": []
   },
   "packageFolders": {
-    "C:\\Users\\antho\\.nuget\\packages\\": {}
+    "C:\\Users\\arthu\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\antho\\OneDrive\\Área de Trabalho\\FACULDADE\\SISTEMAS DE INFORMAÇÃO\\AED\\TRABALHO AED\\AED_Sistema-de-Estacionamento\\AED_Sistema-de-Estacionamento.csproj",
+      "projectUniqueName": "C:\\Users\\arthu\\OneDrive\\Documentos\\GitHub\\AED_Sistema-de-Estacionamento\\AED_Sistema-de-Estacionamento.csproj",
       "projectName": "AED_Sistema-de-Estacionamento",
-      "projectPath": "C:\\Users\\antho\\OneDrive\\Área de Trabalho\\FACULDADE\\SISTEMAS DE INFORMAÇÃO\\AED\\TRABALHO AED\\AED_Sistema-de-Estacionamento\\AED_Sistema-de-Estacionamento.csproj",
-      "packagesPath": "C:\\Users\\antho\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\antho\\OneDrive\\Área de Trabalho\\FACULDADE\\SISTEMAS DE INFORMAÇÃO\\AED\\TRABALHO AED\\AED_Sistema-de-Estacionamento\\obj\\",
+      "projectPath": "C:\\Users\\arthu\\OneDrive\\Documentos\\GitHub\\AED_Sistema-de-Estacionamento\\AED_Sistema-de-Estacionamento.csproj",
+      "packagesPath": "C:\\Users\\arthu\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\arthu\\OneDrive\\Documentos\\GitHub\\AED_Sistema-de-Estacionamento\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\antho\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\arthu\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net9.0"
