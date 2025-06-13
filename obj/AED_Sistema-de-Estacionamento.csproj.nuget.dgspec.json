@@ -1,22 +1,6 @@
 {
   "format": 1,
   "restore": {
-<<<<<<< Updated upstream
-    "C:\\Users\\saraa\\estacionamento\\AED_Sistema-de-Estacionamento\\AED_Sistema-de-Estacionamento.csproj": {}
-  },
-  "projects": {
-    "C:\\Users\\saraa\\estacionamento\\AED_Sistema-de-Estacionamento\\AED_Sistema-de-Estacionamento.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "C:\\Users\\saraa\\estacionamento\\AED_Sistema-de-Estacionamento\\AED_Sistema-de-Estacionamento.csproj",
-        "projectName": "AED_Sistema-de-Estacionamento",
-        "projectPath": "C:\\Users\\saraa\\estacionamento\\AED_Sistema-de-Estacionamento\\AED_Sistema-de-Estacionamento.csproj",
-        "packagesPath": "C:\\Users\\saraa\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\saraa\\estacionamento\\AED_Sistema-de-Estacionamento\\obj\\",
-        "projectStyle": "PackageReference",
-        "configFilePaths": [
-          "C:\\Users\\saraa\\AppData\\Roaming\\NuGet\\NuGet.Config"
-=======
     "C:\\Users\\arthu\\OneDrive\\Documentos\\GitHub\\AED_Sistema-de-Estacionamento\\AED_Sistema-de-Estacionamento.csproj": {}
   },
   "projects": {
@@ -31,7 +15,6 @@
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\arthu\\AppData\\Roaming\\NuGet\\NuGet.Config"
->>>>>>> Stashed changes
         ],
         "originalTargetFrameworks": [
           "net9.0"
@@ -76,11 +59,7 @@
               "privateAssets": "all"
             }
           },
-<<<<<<< Updated upstream
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300/PortableRuntimeIdentifierGraph.json"
-=======
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301/PortableRuntimeIdentifierGraph.json"
->>>>>>> Stashed changes
         }
       }
     }

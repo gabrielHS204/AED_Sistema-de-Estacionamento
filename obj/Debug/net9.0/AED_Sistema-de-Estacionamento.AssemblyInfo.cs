@@ -13,11 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AED_Sistema-de-Estacionamento")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-<<<<<<< Updated upstream
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b9fdc3eb642dc7947086361cc52a7dc27151084c")]
-=======
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bc225a2dd7dd7f31d9de8a2ce6430f574303ed07")]
->>>>>>> Stashed changes
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3b91e9e8348de3836398d2244c2fc99f6e74505b")]
 [assembly: System.Reflection.AssemblyProductAttribute("AED_Sistema-de-Estacionamento")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AED_Sistema-de-Estacionamento")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

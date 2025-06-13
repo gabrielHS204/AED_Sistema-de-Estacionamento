@@ -1,14 +1,18 @@
 {
   "version": 2,
-<<<<<<< Updated upstream
-  "dgSpecHash": "IDQxCaPTpFo=",
-  "success": true,
-  "projectFilePath": "C:\\Users\\saraa\\estacionamento\\AED_Sistema-de-Estacionamento\\AED_Sistema-de-Estacionamento.csproj",
-=======
   "dgSpecHash": "zxGjW7Nrzeg=",
   "success": true,
   "projectFilePath": "C:\\Users\\arthu\\OneDrive\\Documentos\\GitHub\\AED_Sistema-de-Estacionamento\\AED_Sistema-de-Estacionamento.csproj",
->>>>>>> Stashed changes
   "expectedPackageFiles": [],
-  "logs": []
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "message": "Problem reading the cache file C:\\Users\\arthu\\OneDrive\\Documentos\\GitHub\\AED_Sistema-de-Estacionamento\\obj\\project.nuget.cache : '<' is an invalid start of a property name. Expected a '\"'. Path: $ | LineNumber: 2 | BytePositionInLine: 0.",
+      "projectPath": "C:\\Users\\arthu\\OneDrive\\Documentos\\GitHub\\AED_Sistema-de-Estacionamento\\AED_Sistema-de-Estacionamento.csproj",
+      "warningLevel": 1,
+      "filePath": "C:\\Users\\arthu\\OneDrive\\Documentos\\GitHub\\AED_Sistema-de-Estacionamento\\AED_Sistema-de-Estacionamento.csproj",
+      "targetGraphs": []
+    }
+  ]
 }
