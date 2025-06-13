@@ -89,7 +89,7 @@ namespace Estacionamento
             } while (op != 8);
             
         
-
+            System.Console.WriteLine();
             Console.ReadKey();
 
         }
