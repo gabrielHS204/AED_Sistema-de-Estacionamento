@@ -60,19 +60,26 @@ namespace Estacionamento
 
         public static void Main(string[] args)
         {
-            Console.Clear();
+            int op;
+            do
+            {
+                Console.Clear();
 
-            Console.WriteLine("========== MENU DO SISTEMA ==========");
-            Console.WriteLine("1 - Inserir veículo");
-            Console.WriteLine("2 - Mostrar veículos");
-            Console.WriteLine("3 - Remover veículo");
-            Console.WriteLine("4 - Pesquisar veículo");
-            Console.WriteLine("5 - Alterar veículo");
-            Console.WriteLine("6 - Filtrar veículos");
-            Console.WriteLine("7 - Exportar para XML");
-            Console.WriteLine("8 - Sair");
-            Console.WriteLine("=====================================");
-            Console.Write("Escolha uma opção: ");
+                Console.WriteLine("========== MENU DO SISTEMA ==========");
+                Console.WriteLine("1 - Inserir veículo");
+                Console.WriteLine("2 - Mostrar veículos");
+                Console.WriteLine("3 - Remover veículo");
+                Console.WriteLine("4 - Pesquisar veículo");
+                Console.WriteLine("5 - Alterar veículo");
+                Console.WriteLine("6 - Filtrar veículos");
+                Console.WriteLine("7 - Exportar para XML");
+                Console.WriteLine("8 - Sair");
+                Console.WriteLine("=====================================");
+                Console.Write("Escolha uma opção: ");
+                op = int.Parse(Console.ReadLine());
+            } while (op != 8);
+            
+        
 
         }
     }
