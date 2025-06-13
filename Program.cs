@@ -78,9 +78,9 @@ namespace Estacionamento
                 Console.Write("Escolha uma opção: ");
                 op = int.Parse(Console.ReadLine());
             } while (op != 8);
-            
-        
 
+
+            console.WriteLine("Teste");
         }
     }
 }
