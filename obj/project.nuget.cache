@@ -1,8 +1,14 @@
 {
   "version": 2,
+<<<<<<< Updated upstream
   "dgSpecHash": "IDQxCaPTpFo=",
   "success": true,
   "projectFilePath": "C:\\Users\\saraa\\estacionamento\\AED_Sistema-de-Estacionamento\\AED_Sistema-de-Estacionamento.csproj",
+=======
+  "dgSpecHash": "zxGjW7Nrzeg=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\arthu\\OneDrive\\Documentos\\GitHub\\AED_Sistema-de-Estacionamento\\AED_Sistema-de-Estacionamento.csproj",
+>>>>>>> Stashed changes
   "expectedPackageFiles": [],
   "logs": []
 }
