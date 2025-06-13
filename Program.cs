@@ -80,7 +80,6 @@ namespace Estacionamento
             } while (op != 8);
 
 
-            console.WriteLine("Teste2");
         }
     }
 }
