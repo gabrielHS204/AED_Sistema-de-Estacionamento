@@ -74,6 +74,8 @@ namespace Estacionamento
             Console.WriteLine("=====================================");
             Console.Write("Escolha uma opção: ");
 
+            Console.ReadKey();
+
         }
     }
 }
