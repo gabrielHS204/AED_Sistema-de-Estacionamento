@@ -82,7 +82,8 @@ namespace Estacionamento
                 Console.WriteLine("5 - Alterar veículo");
                 Console.WriteLine("6 - Filtrar veículos");
                 Console.WriteLine("7 - Exportar para XML");
-                Console.WriteLine("8 - Sair");
+                Console.WriteLine("8 - Leitura XML");
+                Console.WriteLine("9 - Sair");
                 Console.WriteLine("=====================================");
                 Console.Write("Escolha uma opção: ");
                 op = int.Parse(Console.ReadLine());
