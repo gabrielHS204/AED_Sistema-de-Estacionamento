@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Veiculos>
+  <Veiculo>
+    <Placa>ZRW5I06</Placa>
+    <Modelo>Punto</Modelo>
+    <Marca>Fiat</Marca>
+    <Proprietario>Arthur Souza Carvalho</Proprietario>
+    <Cor>Preto</Cor>
+    <Preferencial>false</Preferencial>
+    <HoraDeEntrada>2025-06-14T01:35:52.9335215-03:00</HoraDeEntrada>
+  </Veiculo>
+</Veiculos>
