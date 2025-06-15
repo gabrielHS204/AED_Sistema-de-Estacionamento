@@ -26,7 +26,7 @@ namespace Estacionamento
 
         public Veiculo(bool x)     //Exemplo de utilização: Veiculo x = new Veiculo(true);
         {
-            Placa = GerarPlaca();   //Foi mais facil utilizar uma função.
+            Placa = "";   //Foi mais facil utilizar uma função.
             Modelo = "";
             Marca = "";
             Proprietario = "";
@@ -45,23 +45,23 @@ namespace Estacionamento
         }
 
 
-        public static string GerarPlaca()
-        {
-            Random x = new Random();
-            string letras = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-            string numeros = "0123456789";
+        /*  public static string GerarPlaca()
+         {
+             Random x = new Random();
+             string letras = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+             string numeros = "0123456789";
 
-            string placa =
-                $"{letras[x.Next(letras.Length)]}" +
-                $"{letras[x.Next(letras.Length)]}" +
-                $"{letras[x.Next(letras.Length)]}" +
-                $"{numeros[x.Next(numeros.Length)]}" +
-                $"{letras[x.Next(letras.Length)]}" +
-                $"{numeros[x.Next(numeros.Length)]}" +
-                $"{numeros[x.Next(numeros.Length)]}";
+             string placa =
+                 $"{letras[x.Next(letras.Length)]}" +
+                 $"{letras[x.Next(letras.Length)]}" +
+                 $"{letras[x.Next(letras.Length)]}" +
+                 $"{numeros[x.Next(numeros.Length)]}" +
+                 $"{letras[x.Next(letras.Length)]}" +
+                 $"{numeros[x.Next(numeros.Length)]}" +
+                 $"{numeros[x.Next(numeros.Length)]}";
 
-            return placa;
-        }
+             return placa;
+         } */
     }
 
 
@@ -193,6 +193,7 @@ namespace Estacionamento
                         MostrarVeiculos();
                         break;
                     case 3:
+                        RemoverVeiculo();
                         //REMOVER VEÍCULO
 
                         //TODO COMPROVANTE DEVE SER SALVO NO XML AO FINAL DA REMOÇÃO DO VEICULO
@@ -204,12 +205,12 @@ namespace Estacionamento
                         //FILTRAR VEÍCULO
 
                         //SUBFUNÇÕES OU DIFERENTES IFS DE FILTRAGEM PARA PODER PESQUISAR VEICULO 
-                        
+
                         break;
                     case 5:
                         //EDITAR INFORMAÇÕES DO VEÍCULO Exemplo: modelo, fiat, proprietario, 
 
-
+                        EditaVeículo(new Veiculo()); // Passa um novo objeto Veiculo para editar
                         // APÓS EDITAR SALVAR e.vagas NO arquivo
                         break;
                     case 0:
@@ -225,6 +226,8 @@ namespace Estacionamento
             } while (op != 0);
         }
 
+
+
         static void InserirVeiculo()
         {
             Console.Clear();
@@ -232,6 +235,8 @@ namespace Estacionamento
 
             // INSERIR TUDO NO OBJETO X 
             Veiculo x = new Veiculo(true);
+            Console.WriteLine("Placa: ");
+            x.Placa = Console.ReadLine();
             Console.Write("Modelo: ");
             x.Modelo = Console.ReadLine();
             Console.Write("Marca: ");
@@ -245,26 +250,37 @@ namespace Estacionamento
                 x.Preferencial = true;
 
             x.HoraDeEntrada = DateTime.Now;
-
-            // LEITURA DO XML  / da matriz 
-            Estacionamento e = new Estacionamento();
-
-            if (e.VagasLivres > 0)
+            if (x.Placa.Length > 7 || x.Placa.Length < 7)// conferir se a placa tem o tamanho certo
             {
-                e.vagas.Add(x);
-                e.VagasLivres--;
+                Console.WriteLine("Placa invalida....");
+                Console.ReadKey();
             }
+
+
             else
             {
-                Console.WriteLine("O Estacionamento está cheio!\n");
+                // LEITURA DO XML  / da matriz 
+                Estacionamento e = new Estacionamento();
+
+                if (e.VagasLivres > 0)
+                {
+                    e.vagas.Add(x);
+                    e.VagasLivres--;
+                }
+                else
+                {
+                    Console.WriteLine("O Estacionamento está cheio!\n");
+                }
+
+                // LOCAL ONDE SE DEVE ORDENAR O OBJETO  e.vagas
+
+
+
+                // EXPORTANDO XML 
+                e.SalvarXML();
+                Console.ReadKey();
+                
             }
-
-            // LOCAL ONDE SE DEVE ORDENAR O OBJETO  e.vagas
-
-
-
-            // EXPORTANDO XML 
-            e.SalvarXML();
         }
 
         static void MostrarVeiculos()
@@ -294,5 +310,139 @@ namespace Estacionamento
             Console.ReadKey();
         }
 
+        public static void EditaVeículo(Veiculo x) // Edita informações do veículo
+        {
+            Estacionamento y = new Estacionamento();
+            bool achou = false;
+
+
+            Console.WriteLine("\nPara editar as informações do seu veículo, por favor, informe a placa: ");
+            x.Placa = Console.ReadLine();
+
+            foreach (var e in y.vagas)
+            {
+
+
+                if (e.Placa == x.Placa) // Verifica se a placa existe na lista de veículos
+                {
+
+                    // Se a placa existir, solicita as novas informações
+                    Console.Clear();
+                    Console.WriteLine("Placa encontrada! Por favor, insira as novas informações do veículo:");
+
+                    Console.Write("Modelo: ");
+                    e.Modelo = Console.ReadLine();
+                    Console.Write("Placa: ");
+                    e.Placa = Console.ReadLine();
+                    Console.Write("Marca: ");
+                    e.Marca = Console.ReadLine();
+                    Console.Write("Proprietário: ");
+                    e.Proprietario = Console.ReadLine();
+                    Console.WriteLine("Cor: ");
+                    e.Cor = Console.ReadLine();
+                    Console.WriteLine("É preferencial? (s/n): ");
+                    if (Console.ReadLine().ToLower() == "s")
+                        e.Preferencial = true;
+
+
+                    // Salva as alterações no XML e Atualiza o veículo na lista
+
+                    y.SalvarXML();
+                    achou = true;
+
+                }
+
+
+            }
+
+            if (!achou) // Se somente não encontrar
+            {
+                Console.WriteLine("Placa não encontrada! Por favor , insira uma placa válida.");
+                Console.ReadKey();
+            }
+
+        }
+
+
+        static void RemoverVeiculo() // Remover veículo
+        {
+            Console.Clear();
+
+            Console.WriteLine($"Digite a placa do veiculo desejado para ser removido:");
+            string placa = Console.ReadLine().ToUpper();
+
+            Estacionamento x = new Estacionamento();
+
+            Veiculo veiculo = x.vagas.FirstOrDefault(v => v.Placa.ToUpper() == placa.ToUpper());
+
+
+            if (veiculo == null)
+            {
+                Console.WriteLine("veiculo nao encontrado");
+                Console.ReadKey();
+                return;
+            }
+
+            Comprovante c = new Comprovante
+            {
+                Placa = veiculo.Placa,
+                HoraDeEntrada = veiculo.HoraDeEntrada,
+                HoraDeSaida = DateTime.Now,
+                ValorPago = x.PrecoFixo
+            };
+
+            x.vagas.Remove(veiculo);
+            x.VagasLivres++;
+
+            x.SalvarXML();
+
+            SalvarComprovante(c);
+
+            Console.WriteLine($"veiculo removido com sucesso!");
+            Console.WriteLine($"valor pago {x.PrecoFixo}");
+            Console.ReadKey();
+
+
+        }
+
+        static void SalvarComprovante(Comprovante c)
+        {
+
+            XDocument doc;
+
+            if (File.Exists("Comprovantes.xml"))
+            {
+                doc = XDocument.Load("Comprovantes.xml");
+            }
+            else
+            {
+                doc = new XDocument(new XElement("comprovantes"));
+            }
+
+            XElement novo = new XElement("comprovante",
+            new XElement("placa", c.Placa),
+            new XElement("HoraDeEntrada", c.HoraDeEntrada),
+            new XElement("HoraDeSaida", c.HoraDeSaida),
+            new XElement("ValorPago", c.ValorPago)
+            );
+
+            doc.Root.Add(novo);
+            doc.Save("Comprovantes.xml");
+
+            Console.Clear();
+            Console.WriteLine("===== COMPROVANTE DE SAÍDA =====");
+            Console.WriteLine($"Placa: {c.Placa}");
+            Console.WriteLine($"Hora de Entrada: {c.HoraDeEntrada}");
+            Console.WriteLine($"Hora de Saída: {c.HoraDeSaida}");
+
+            TimeSpan tempoEstacionado = c.HoraDeSaida - c.HoraDeEntrada;
+            Console.WriteLine($"Tempo Estacionado: {tempoEstacionado.Hours}h {tempoEstacionado.Minutes}m");
+
+            Console.WriteLine($"Valor Pago: R$ {c.ValorPago:F2}");
+            Console.WriteLine("================================");
+            Console.ReadKey();
+
+
+        }
     }
 }
