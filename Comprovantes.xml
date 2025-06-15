@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<comprovantes>
+  <comprovante>
+    <placa>QCG6Q87</placa>
+    <HoraDeEntrada>2025-06-14T16:38:30.5042019-03:00</HoraDeEntrada>
+    <HoraDeSaida>2025-06-14T20:25:50.8204356-03:00</HoraDeSaida>
+    <ValorPago>0</ValorPago>
+  </comprovante>
+  <comprovante>
+    <placa>WCM5B60</placa>
+    <HoraDeEntrada>2025-06-14T20:29:54.1844329-03:00</HoraDeEntrada>
+    <HoraDeSaida>2025-06-14T20:30:14.6860845-03:00</HoraDeSaida>
+    <ValorPago>0</ValorPago>
+  </comprovante>
+</comprovantes>
