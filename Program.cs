@@ -134,7 +134,38 @@ namespace Estacionamento
             }
         }
 
+        public void FiltrarVeiculo()
+        {
+            Console.WriteLine("Escolha um paramentro para filtrar um veiculo: ");
+            Console.WriteLine("A - Placa");
+            Console.WriteLine("B - Modelo");
+            Console.WriteLine("C - Marca");
+            Console.WriteLine("D - Proprietário");
+            Console.WriteLine("E - Tipo da vaga (Preferencial ou normal)");
 
+            string opc = Console.ReadLine().ToUpper();
+
+            switch (opc)
+            {
+                case "A":
+
+                    break;
+
+                case "B":
+                    break;
+
+                case "C":
+                    break;
+
+                case "D":
+                    break;
+
+                case "E":
+                    break;
+            }
+
+            Console.ReadKey();
+        }
     }
 
     // Classe para gerar comprovante de entrada/saída
@@ -157,6 +188,7 @@ namespace Estacionamento
         {
             //CRUD
             int op = 1;
+            Estacionamento SistemaEstacionamento = new Estacionamento();
 
             do
             {
@@ -202,6 +234,7 @@ namespace Estacionamento
 
                         break;
                     case 4:
+                        SistemaEstacionamento.FiltrarVeiculo();
                         //FILTRAR VEÍCULO
 
                         //SUBFUNÇÕES OU DIFERENTES IFS DE FILTRAGEM PARA PODER PESQUISAR VEICULO 
@@ -279,7 +312,7 @@ namespace Estacionamento
                 // EXPORTANDO XML 
                 e.SalvarXML();
                 Console.ReadKey();
-                
+
             }
         }
 
