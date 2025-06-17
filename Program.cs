@@ -271,7 +271,7 @@ namespace Estacionamento
             // INSERIR TUDO NO OBJETO X 
             Veiculo x = new Veiculo(true);
             Console.WriteLine("Placa: ");
-            x.Placa = Console.ReadLine();
+            x.Placa = Console.ReadLine().ToUpper();
             Console.Write("Modelo: ");
             x.Modelo = Console.ReadLine();
             Console.Write("Marca: ");
