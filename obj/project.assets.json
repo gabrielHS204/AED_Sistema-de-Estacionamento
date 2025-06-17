@@ -8,19 +8,19 @@
     "net9.0": []
   },
   "packageFolders": {
-    "C:\\Users\\geova\\.nuget\\packages\\": {}
+    "C:\\Users\\arthu\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\geova\\Repositorios - Git\\AED_Sistema-de-Estacionamento\\AED_Sistema-de-Estacionamento.csproj",
+      "projectUniqueName": "C:\\Users\\arthu\\Documents\\GitHub\\AED_Sistema-de-Estacionamento\\AED_Sistema-de-Estacionamento.csproj",
       "projectName": "AED_Sistema-de-Estacionamento",
-      "projectPath": "C:\\Users\\geova\\Repositorios - Git\\AED_Sistema-de-Estacionamento\\AED_Sistema-de-Estacionamento.csproj",
-      "packagesPath": "C:\\Users\\geova\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\geova\\Repositorios - Git\\AED_Sistema-de-Estacionamento\\obj\\",
+      "projectPath": "C:\\Users\\arthu\\Documents\\GitHub\\AED_Sistema-de-Estacionamento\\AED_Sistema-de-Estacionamento.csproj",
+      "packagesPath": "C:\\Users\\arthu\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\arthu\\Documents\\GitHub\\AED_Sistema-de-Estacionamento\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\geova\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\arthu\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net9.0"
@@ -44,7 +44,7 @@
         "auditLevel": "low",
         "auditMode": "direct"
       },
-      "SdkAnalysisLevel": "9.0.300"
+      "SdkAnalysisLevel": "9.0.100"
     },
     "frameworks": {
       "net9.0": {
@@ -65,16 +65,8 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102/PortableRuntimeIdentifierGraph.json"
       }
     }
-  },
-  "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Problem reading the cache file C:\\Users\\arthu\\OneDrive\\Documentos\\GitHub\\AED_Sistema-de-Estacionamento\\obj\\project.nuget.cache : '<' is an invalid start of a property name. Expected a '\"'. Path: $ | LineNumber: 2 | BytePositionInLine: 0."
-    }
-  ]
+  }
 }

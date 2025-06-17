@@ -1,8 +1,4 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Estacionamento>
-<Nome>Estacionamento Central</Nome>
-<Endereco>Monte Carmo</Endereco>
-<PrecoFixo>14</PrecoFixo>
 <Veiculos>
   <Veiculo>
     <Placa>OSY4Q22</Placa>
@@ -23,4 +19,3 @@
     <HoraDeEntrada>2025-06-14T23:57:35.8299652-03:00</HoraDeEntrada>
   </Veiculo>
 </Veiculos>
-</Estacionamento>
