@@ -188,7 +188,6 @@ namespace Estacionamento
         {
             //CRUD
             int op = 1;
-            Estacionamento SistemaEstacionamento = new Estacionamento();
 
             do
             {
@@ -234,7 +233,7 @@ namespace Estacionamento
 
                         break;
                     case 4:
-                        SistemaEstacionamento.FiltrarVeiculo();
+                        FiltrarVeiculo();
                         //FILTRAR VEÍCULO
 
                         //SUBFUNÇÕES OU DIFERENTES IFS DE FILTRAGEM PARA PODER PESQUISAR VEICULO 
@@ -340,6 +339,191 @@ namespace Estacionamento
                 Console.WriteLine("Não há veiculos!");
                 Console.ReadKey();
             }
+            Console.ReadKey();
+        }
+        static void FiltrarVeiculo()
+        {
+            Estacionamento SistemaEstacionamento = new Estacionamento();
+
+            Console.WriteLine("Escolha um paramentro para filtrar um veiculo: ");
+            Console.WriteLine("A - Placa");
+            Console.WriteLine("B - Modelo");
+            Console.WriteLine("C - Marca");
+            Console.WriteLine("D - Cor");
+            Console.WriteLine("E - Proprietário");
+            Console.WriteLine("F - Tipo da vaga (Preferencial ou normal)");
+
+            string opc = Console.ReadLine().ToUpper();
+            Console.Clear();
+
+            switch (opc)
+            {
+                case "A":
+                    Console.WriteLine("Digite a placa que deseja buscar: ");
+                    string placa = Console.ReadLine();
+
+                    var filtroA = from v in SistemaEstacionamento.vagas
+                                  where placa.ToUpper() == v.Placa.ToUpper()
+                                  select v;
+
+                    Console.WriteLine();
+                    Console.WriteLine(filtroA.Count() > 0 ? $"Segue o(s) veiculo(s) que possuem a placa {placa}:" : "Não encontramos nem um dado de referente ao filtro solicitado.");
+                    Console.WriteLine();
+
+                    int a = 1;
+                    foreach (var veiculo in filtroA)
+                    {
+                        Console.WriteLine("============================================");
+                        Console.WriteLine($"{a}° veiculo encontrado:");
+                        Console.WriteLine($"Placa: {veiculo.Placa}");
+                        Console.WriteLine($"Modelo: {veiculo.Modelo}");
+                        Console.WriteLine($"Marca: {veiculo.Marca}");
+                        Console.WriteLine($"Proprietário: {veiculo.Proprietario}");
+                        Console.WriteLine($"Cor: {veiculo.Cor}");
+                        Console.WriteLine($"Prioritaria: {(veiculo.Preferencial ? "Sim" : "Não")}");
+
+                        a++;
+                    }
+                    break;
+
+                case "B":
+                    Console.WriteLine("Digite o modelo que deseja buscar: ");
+                    string modelo = Console.ReadLine();
+
+                    var filtroB = from v in SistemaEstacionamento.vagas
+                                  where modelo.ToUpper() == v.Modelo.ToUpper()
+                                  select v;
+
+                    Console.WriteLine();
+                    Console.WriteLine(filtroB.Count() > 0 ? $"Segue o(s) veiculo(s) do modelo {modelo}" : "Não encontramos nem um dado de referente ao filtro solicitado.");
+                    Console.WriteLine();
+
+                    int b = 1;
+                    foreach (var veiculo in filtroB)
+                    {
+                        Console.WriteLine("============================================");
+                        Console.WriteLine($"{b}° veiculo encontrado:");
+                        Console.WriteLine($"Placa: {veiculo.Placa}");
+                        Console.WriteLine($"Modelo: {veiculo.Modelo}");
+                        Console.WriteLine($"Marca: {veiculo.Marca}");
+                        Console.WriteLine($"Proprietário: {veiculo.Proprietario}");
+                        Console.WriteLine($"Cor: {veiculo.Cor}");
+                        Console.WriteLine($"Prioritaria: {(veiculo.Preferencial ? "Sim" : "Não")}");
+
+                        b++;
+                    }
+                    break;
+
+                case "C":
+                    Console.WriteLine("Digite a marca que deseja buscar: ");
+                    string marca = Console.ReadLine();
+
+                    var filtroC = from v in SistemaEstacionamento.vagas
+                                  where marca.ToUpper() == v.Marca.ToUpper()
+                                  select v;
+
+                    Console.WriteLine();
+                    Console.WriteLine(filtroC.Count() > 0 ? $"Segue o(s) veiculo(s) da marca {marca}" : "Não encontramos nem um dado de referente ao filtro solicitado.");
+                    Console.WriteLine();
+
+                    int c = 1;
+                    foreach (var veiculo in filtroC)
+                    {
+                        Console.WriteLine("============================================");
+                        Console.WriteLine($"{c}° veiculo encontrado:");
+                        Console.WriteLine($"Placa: {veiculo.Placa}");
+                        Console.WriteLine($"Modelo: {veiculo.Modelo}");
+                        Console.WriteLine($"Marca: {veiculo.Marca}");
+                        Console.WriteLine($"Proprietário: {veiculo.Proprietario}");
+                        Console.WriteLine($"Cor: {veiculo.Cor}");
+                        Console.WriteLine($"Prioritaria: {(veiculo.Preferencial ? "Sim" : "Não")}");
+
+                        c++;
+                    }
+                    break;
+
+                case "D":
+                    Console.WriteLine("Digite a cor que deseja buscar: ");
+                    string cor = Console.ReadLine();
+
+                    var filtroD = from v in SistemaEstacionamento.vagas
+                                  where cor.ToUpper() == v.Cor.ToUpper()
+                                  select v;
+
+                    Console.WriteLine();
+                    Console.WriteLine(filtroD.Count() > 0 ? $"Segue o(s) veiculo(s) da cor {cor}" : "Não encontramos nem um dado de referente ao filtro solicitado.");
+                    Console.WriteLine();
+
+                    int d = 1;
+                    foreach (var veiculo in filtroD)
+                    {
+                        Console.WriteLine("============================================");
+                        Console.WriteLine($"{d}° veiculo encontrado:");
+                        Console.WriteLine($"Placa: {veiculo.Placa}");
+                        Console.WriteLine($"Modelo: {veiculo.Modelo}");
+                        Console.WriteLine($"Marca: {veiculo.Marca}");
+                        Console.WriteLine($"Proprietário: {veiculo.Proprietario}");
+                        Console.WriteLine($"Cor: {veiculo.Cor}");
+                        Console.WriteLine($"Prioritaria: {(veiculo.Preferencial ? "Sim" : "Não")}");
+
+                        d++;
+                    }
+                    break;
+
+                case "E":
+                    Console.WriteLine("Digite o nome do proprietário que deseja buscar: ");
+                    string proprietario = Console.ReadLine();
+
+                    var filtroE = from v in SistemaEstacionamento.vagas
+                                  where proprietario.ToUpper() == v.Proprietario.ToUpper()
+                                  select v;
+
+                    Console.WriteLine();
+                    Console.WriteLine(filtroE.Count() > 0 ? $"Segue o(s) veiculo(s) do proprietário {proprietario}:" : "Não encontramos nem um dado de referente ao filtro solicitado.");
+                    Console.WriteLine();
+
+                    int e = 1;
+                    foreach (var veiculo in filtroE)
+                    {
+                        Console.WriteLine("============================================");
+                        Console.WriteLine($"{e}° veiculo encontrado:");
+                        Console.WriteLine($"Placa: {veiculo.Placa}");
+                        Console.WriteLine($"Modelo: {veiculo.Modelo}");
+                        Console.WriteLine($"Marca: {veiculo.Marca}");
+                        Console.WriteLine($"Proprietário: {veiculo.Proprietario}");
+                        Console.WriteLine($"Cor: {veiculo.Cor}");
+                        Console.WriteLine($"Prioritaria: {(veiculo.Preferencial ? "Sim" : "Não")}");
+
+                        e++;
+                    }
+                    break;
+
+                case "F":
+                    var filtroF = from v in SistemaEstacionamento.vagas
+                                  where v.Preferencial == true
+                                  select v;
+
+                    Console.WriteLine();
+                    Console.WriteLine(filtroF.Count() > 0 ? $"Segue o(s) veiculo(s) que estão em vagas prioritárias:" : "Não encontramos nem um dado de referente ao filtro solicitado.");
+                    Console.WriteLine();
+
+                    int f = 1;
+                    foreach (var veiculo in filtroF)
+                    {
+                        Console.WriteLine("============================================");
+                        Console.WriteLine($"{f}° veiculo encontrado:");
+                        Console.WriteLine($"Placa: {veiculo.Placa}");
+                        Console.WriteLine($"Modelo: {veiculo.Modelo}");
+                        Console.WriteLine($"Marca: {veiculo.Marca}");
+                        Console.WriteLine($"Proprietário: {veiculo.Proprietario}");
+                        Console.WriteLine($"Cor: {veiculo.Cor}");
+                        Console.WriteLine($"Prioritaria: {(veiculo.Preferencial ? "Sim" : "Não")}");
+
+                        f++;
+                    }
+                    break;
+            }
+
             Console.ReadKey();
         }
 
