@@ -127,6 +127,9 @@ namespace Estacionamento
         public void SalvarComprovante()
         {
 
+
+            double preco = 10;
+            
             XDocument doc;
 
             if (File.Exists("Comprovantes.xml"))
