@@ -26,7 +26,7 @@ namespace Estacionamento
 
         public Veiculo()     //Construtor Padrão
         {
-            Placa = "";   
+            Placa = "";
             Modelo = "";
             Marca = "";
             Proprietario = "";
@@ -113,13 +113,16 @@ namespace Estacionamento
         public DateTime HoraDeSaida;
 
         public double ValorPago;
-        
+
         public bool VagaPreferencial; // Indica se a vaga é preferencial ou não
 
         // Comprovantes.xml out 
         public void SalvarComprovante()
         {
 
+
+            double preco = 10;
+            
             XDocument doc;
 
             if (File.Exists("Comprovantes.xml"))
@@ -251,26 +254,33 @@ namespace Estacionamento
             Console.WriteLine("===== ENTRADA DE VEÍCULO =====");
             Console.WriteLine("Placa: ");
             x.Placa = Console.ReadLine().ToUpper();
-            Console.Write("Modelo: ");
-            x.Modelo = Console.ReadLine();
-            Console.Write("Marca: ");
-            x.Marca = Console.ReadLine();
-            Console.Write("Proprietário: ");
-            x.Proprietario = Console.ReadLine();
-            Console.Write("Cor: ");
-            x.Cor = Console.ReadLine();
-            Console.Write("É preferencial? (s/n): ");
-            if (Console.ReadLine().ToLower() == "s")
-                x.Preferencial = true;
 
-            x.HoraDeEntrada = DateTime.Now;
-            if (x.Placa.Length > 7 || x.Placa.Length < 7)// conferir se a placa tem o tamanho certo
+            XDocument doc = XDocument.Load("veiculos.xml");
+
+            bool PlacaExiste = doc.Descendants("Veiculo").Any(p => (string)p.Element("Placa") == x.Placa);
+
+            if (x.Placa.Length != 7 || PlacaExiste)// 
             {
                 Console.WriteLine("Placa invalida....");
                 Console.ReadKey();
             }
             else
             {
+                Console.Write("Modelo: ");
+                x.Modelo = Console.ReadLine();
+                Console.Write("Marca: ");
+                x.Marca = Console.ReadLine();
+                Console.Write("Proprietário: ");
+                x.Proprietario = Console.ReadLine();
+                Console.Write("Cor: ");
+                x.Cor = Console.ReadLine();
+                Console.Write("É preferencial? (s/n): ");
+                if (Console.ReadLine().ToLower() == "s")
+                    x.Preferencial = true;
+
+                x.HoraDeEntrada = DateTime.Now;
+
+
 
                 if (Sistema.VagasLivres > 0)
                 {
