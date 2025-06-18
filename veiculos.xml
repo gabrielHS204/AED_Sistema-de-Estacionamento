@@ -10,12 +10,39 @@
     <HoraDeEntrada>2025-06-14T22:16:04.8348253-03:00</HoraDeEntrada>
   </Veiculo>
   <Veiculo>
-    <Placa>A1B2C3E</Placa>
-    <Modelo>Modelo1</Modelo>
-    <Marca>Marca2</Marca>
-    <Proprietario>Cara1</Proprietario>
-    <Cor>Cor</Cor>
+    <Placa>QQ7789Y</Placa>
+    <Modelo>carro1</Modelo>
+    <Marca>marca1</Marca>
+    <Proprietario>pessoa2</Proprietario>
+    <Cor>verde</Cor>
     <Preferencial>true</Preferencial>
-    <HoraDeEntrada>2025-06-14T23:57:35.8299652-03:00</HoraDeEntrada>
+    <HoraDeEntrada>2025-06-17T19:13:36.3635082-03:00</HoraDeEntrada>
+  </Veiculo>
+  <Veiculo>
+    <Placa>A1A2A3C</Placa>
+    <Modelo>modelo1</Modelo>
+    <Marca>marca5</Marca>
+    <Proprietario>pessoa4</Proprietario>
+    <Cor>rosa</Cor>
+    <Preferencial>true</Preferencial>
+    <HoraDeEntrada>2025-06-17T20:15:03.5119386-03:00</HoraDeEntrada>
+  </Veiculo>
+  <Veiculo>
+    <Placa>B2B1B3R</Placa>
+    <Modelo>modelo8</Modelo>
+    <Marca>marca0</Marca>
+    <Proprietario>pessoa4</Proprietario>
+    <Cor>amarelo</Cor>
+    <Preferencial>false</Preferencial>
+    <HoraDeEntrada>2025-06-17T20:16:05.2634932-03:00</HoraDeEntrada>
+  </Veiculo>
+  <Veiculo>
+    <Placa>A5B5H6U</Placa>
+    <Modelo>modelo4</Modelo>
+    <Marca>marca1</Marca>
+    <Proprietario>pessoa3</Proprietario>
+    <Cor>azul</Cor>
+    <Preferencial>true</Preferencial>
+    <HoraDeEntrada>2025-06-17T20:44:36.5308865-03:00</HoraDeEntrada>
   </Veiculo>
 </Veiculos>

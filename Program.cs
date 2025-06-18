@@ -1,30 +1,22 @@
 ﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.Dynamic;
-using System.Linq;
-using System.Text;
-using System.Text.RegularExpressions;
-using System.Threading.Tasks;
-using System.Xml;
 using System.Xml.Linq;
 
-namespace Estacionamento
+namespace Estacionamento // Organizar os blocos de códigos
 {
 
-    public class Veiculo
+    public class Veiculo 
     {
         public string? Placa { get; set; }
         public string? Modelo { get; set; }
         public string? Marca { get; set; }
-        public string? Proprietario { get; set; } // Corrigido nome da variável
+        public string? Proprietario { get; set; } 
         public string? Cor { get; set; }
-        public bool Preferencial { get; set; } //Tipo Booleano se é preferencial ou não
+        public bool Preferencial { get; set; } 
 
-        public DateTime HoraDeEntrada { get; set; } // NA INSERÇÃO DO VEICULO SERA DEFININO A SUA HORA DE ENTRADA.
+        public DateTime HoraDeEntrada { get; set; } 
 
 
-        public Veiculo()     //Construtor Padrão
+        public Veiculo()     //Construtor Padrão da classe Veículo
         {
             Placa = "";
             Modelo = "";
@@ -38,17 +30,16 @@ namespace Estacionamento
 
     public class Estacionamento
     {
-        public List<Veiculo> vagas = new List<Veiculo>(); // vagas
-
-        public string Endereco; // Exemplo: “Monte Carmo”
-        public string Nome; // Nome do estacionamento
+        public List<Veiculo> vagas = new List<Veiculo>(); 
+        public string Endereco; 
+        public string Nome; 
 
         public int VagasLivres; // Sempre alterado conforme ocupação
         public int VagasLivresPreferencias; // Sempre alterado conforme ocupação de vagas preferenciais
         public double PrecoFixo; // Exemplo: 14reais
 
 
-        public Estacionamento()
+        public Estacionamento() // Construtor do estacionamneto
         {
             Nome = "Estacionamento Central";
             Endereco = "Monte Carmo";
@@ -200,10 +191,10 @@ namespace Estacionamento
                 switch (op)
                 {
                     case 1:
+
+                        // Chama a função para inserção de veículos no xml , todo dado deve ser ordenado antes de ser salvo no XML;
                         InserirVeiculo(new Veiculo(), SistemaDeEstacionamento);
-
-                        // TODO DADO DEVE SER ORDENADO ANTES DE SALVAR NO XML;
-
+                        
                         break;
                     case 2:
                         MostrarVeiculos(SistemaDeEstacionamento);
@@ -225,6 +216,7 @@ namespace Estacionamento
 
                         break;
                     case 5:
+
                         //EDITAR INFORMAÇÕES DO VEÍCULO Exemplo: modelo, fiat, proprietario, 
 
                         EditaVeículo(new Veiculo(), SistemaDeEstacionamento); // Passa um novo objeto Veiculo para editar
@@ -355,7 +347,7 @@ namespace Estacionamento
 
             if (veiculo == null)
             {
-                Console.WriteLine("veiculo nao encontrado");
+                Console.WriteLine("Veículo não encontrado. Por favor, insira uma placa válida!");
                 Console.ReadKey();
                 return;
             }
@@ -615,5 +607,7 @@ namespace Estacionamento
                 Console.ReadKey();
             }
         }
+
+       
     }
 }
