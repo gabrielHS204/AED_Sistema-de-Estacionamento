@@ -28,8 +28,8 @@ Aplicar nossos conhecimentos adquiridos na disciplina de AED, desenvolvendo um t
 
 List <Veiculo> vagas  
   - Lista principal que armazena os veículos que estiverem estacionados. 
-  - Adicionar e remover veículos dinamicamente;
-  - Ordenar por atributos (placa);
+  - Adicionar e remover veículos dinamicamente.
+  - Ordenar por atributos (placa).
   - Editar dados com base na chave placa.
 
 # LINQ
