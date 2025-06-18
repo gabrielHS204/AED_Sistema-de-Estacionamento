@@ -102,13 +102,6 @@ namespace Estacionamento
                 VagasLivresPreferencias = 20;
             }
         }
-
-       public void OrdenaVagas()
-        {
-            // Ordena as vagas por hora de entrada
-            vagas = vagas.OrderBy(v => v.Placa).ToList();
-        }
-
     }
 
     // Classe para gerar comprovante de entrada/saída
@@ -298,9 +291,7 @@ namespace Estacionamento
                     Console.ReadKey();
                     return;
                 }
-                {
-                    Console.WriteLine("O Estacionamento está cheio!\n");
-                }
+                
 
                 // LOCAL ONDE SE DEVE ORDENAR O OBJETO  Sistema.vagas
 
@@ -320,7 +311,7 @@ namespace Estacionamento
             // Ordena os veículos por placa antes de mostrar
             Sistema.vagas = Sistema.vagas.OrderBy(v => v.Placa).ToList();
 
-            if (Sistema.VagasLivres != 100)
+            if ((Sistema.VagasLivres + Sistema.VagasLivresPreferencias) != 100)
             {
                 foreach (var v in Sistema.vagas)
                 {
@@ -587,8 +578,6 @@ namespace Estacionamento
 
                     Console.Write("Modelo: ");
                     v.Modelo = Console.ReadLine();
-                    Console.Write("Placa: ");
-                    v.Placa = Console.ReadLine();
                     Console.Write("Marca: ");
                     v.Marca = Console.ReadLine();
                     Console.Write("Proprietário: ");
