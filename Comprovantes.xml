@@ -50,4 +50,27 @@
     <ValorPago>0</ValorPago>
     <VagaPrioritaria>false</VagaPrioritaria>
   </comprovante>
+    <placa>CKZ7M06</placa>
+    <HoraDeEntrada>2025-06-14T22:14:00.0381811-03:00</HoraDeEntrada>
+    <HoraDeSaida>2025-06-14T23:45:38.0399121-03:00</HoraDeSaida>
+    <ValorPago>0</ValorPago>
+  </comprovante>
+  <comprovante>
+    <placa>QQO8D92</placa>
+    <HoraDeEntrada>2025-06-14T22:42:05.8497093-03:00</HoraDeEntrada>
+    <HoraDeSaida>2025-06-14T23:51:24.0965112-03:00</HoraDeSaida>
+    <ValorPago>0</ValorPago>
+  </comprovante>
+  <comprovante>
+    <placa>A1B2C3E</placa>
+    <HoraDeEntrada>2025-06-14T23:57:35.8299652-03:00</HoraDeEntrada>
+    <HoraDeSaida>2025-06-15T00:03:12.5067322-03:00</HoraDeSaida>
+    <ValorPago>1400</ValorPago>
+  </comprovante>
+  <comprovante>
+    <placa>gohk589</placa>
+    <HoraDeEntrada>2025-06-17T20:16:16.8296144-03:00</HoraDeEntrada>
+    <HoraDeSaida>2025-06-17T20:16:56.942845-03:00</HoraDeSaida>
+    <ValorPago>0</ValorPago>
+  </comprovante>
 </comprovantes>

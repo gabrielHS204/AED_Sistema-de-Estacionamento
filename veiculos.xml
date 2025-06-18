@@ -1,2 +1,21 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Veiculos />
+<Veiculos>
+  <Veiculo>
+    <Placa>OSY4Q22</Placa>
+    <Modelo>Monza</Modelo>
+    <Marca>Chevrolet</Marca>
+    <Proprietario>Victor Dante</Proprietario>
+    <Cor>Vinho</Cor>
+    <Preferencial>true</Preferencial>
+    <HoraDeEntrada>2025-06-14T22:16:04.8348253-03:00</HoraDeEntrada>
+  </Veiculo>
+  <Veiculo>
+    <Placa>A1B2C3E</Placa>
+    <Modelo>Modelo1</Modelo>
+    <Marca>Marca2</Marca>
+    <Proprietario>Cara1</Proprietario>
+    <Cor>Cor</Cor>
+    <Preferencial>true</Preferencial>
+    <HoraDeEntrada>2025-06-14T23:57:35.8299652-03:00</HoraDeEntrada>
+  </Veiculo>
+</Veiculos>
