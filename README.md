@@ -2,10 +2,10 @@
 # Integrantes do Grupo:
 
 Arthur Souza Carvalho
-Anthony Augusto Neindite Nunes da Silva
-Gabriel Henrique da Silva Santos
-Gardenia Iris Anselmo Rodrigues da Fonseca
-Geovanna Quezia Oliveira de Cassia
+Anthony Augusto Neindite Nunes da Silva,
+Gabriel Henrique da Silva Santos,
+Gardenia Iris Anselmo Rodrigues da Fonseca,
+Geovanna Quezia Oliveira de Cassia,
 Sara de Almeida Pasolini
 
 # Sistema de Gerenciamento de Estacionamento
