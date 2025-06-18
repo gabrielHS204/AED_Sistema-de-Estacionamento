@@ -18,4 +18,10 @@
     <HoraDeSaida>2025-06-15T00:03:12.5067322-03:00</HoraDeSaida>
     <ValorPago>1400</ValorPago>
   </comprovante>
+  <comprovante>
+    <placa>gohk589</placa>
+    <HoraDeEntrada>2025-06-17T20:16:16.8296144-03:00</HoraDeEntrada>
+    <HoraDeSaida>2025-06-17T20:16:56.942845-03:00</HoraDeSaida>
+    <ValorPago>0</ValorPago>
+  </comprovante>
 </comprovantes>
