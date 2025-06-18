@@ -9,4 +9,13 @@
     <Preferencial>false</Preferencial>
     <HoraDeEntrada>2025-06-14T01:35:52.9335215-03:00</HoraDeEntrada>
   </Veiculo>
+  <Veiculo>
+    <Placa>QUS1K56</Placa>
+    <Modelo>Fit</Modelo>
+    <Marca>Honda</Marca>
+    <Proprietario>Claudio de carvalho</Proprietario>
+    <Cor>Preto</Cor>
+    <Preferencial>false</Preferencial>
+    <HoraDeEntrada>2025-06-17T21:53:48.8074218-03:00</HoraDeEntrada>
+  </Veiculo>
 </Veiculos>
