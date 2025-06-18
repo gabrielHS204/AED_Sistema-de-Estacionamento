@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\saraa\\OneDrive\\Documentos\\GitHub\\AED_Sistema-de-Estacionamento\\AED_Sistema-de-Estacionamento.csproj": {}
+    "C:\\Users\\arthu\\Documents\\GitHub\\AED_Sistema-de-Estacionamento\\AED_Sistema-de-Estacionamento.csproj": {}
   },
   "projects": {
-    "C:\\Users\\saraa\\OneDrive\\Documentos\\GitHub\\AED_Sistema-de-Estacionamento\\AED_Sistema-de-Estacionamento.csproj": {
+    "C:\\Users\\arthu\\Documents\\GitHub\\AED_Sistema-de-Estacionamento\\AED_Sistema-de-Estacionamento.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\saraa\\OneDrive\\Documentos\\GitHub\\AED_Sistema-de-Estacionamento\\AED_Sistema-de-Estacionamento.csproj",
+        "projectUniqueName": "C:\\Users\\arthu\\Documents\\GitHub\\AED_Sistema-de-Estacionamento\\AED_Sistema-de-Estacionamento.csproj",
         "projectName": "AED_Sistema-de-Estacionamento",
-        "projectPath": "C:\\Users\\saraa\\OneDrive\\Documentos\\GitHub\\AED_Sistema-de-Estacionamento\\AED_Sistema-de-Estacionamento.csproj",
-        "packagesPath": "C:\\Users\\saraa\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\saraa\\OneDrive\\Documentos\\GitHub\\AED_Sistema-de-Estacionamento\\obj\\",
+        "projectPath": "C:\\Users\\arthu\\Documents\\GitHub\\AED_Sistema-de-Estacionamento\\AED_Sistema-de-Estacionamento.csproj",
+        "packagesPath": "C:\\Users\\arthu\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\arthu\\Documents\\GitHub\\AED_Sistema-de-Estacionamento\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\saraa\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\arthu\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net9.0"
@@ -38,7 +38,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.300"
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "net9.0": {
@@ -59,7 +59,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
