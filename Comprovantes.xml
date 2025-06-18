@@ -12,4 +12,42 @@
     <HoraDeSaida>2025-06-14T20:30:14.6860845-03:00</HoraDeSaida>
     <ValorPago>0</ValorPago>
   </comprovante>
+  <comprovante>
+    <placa>QQQ123Q</placa>
+    <HoraDeEntrada>2025-06-17T19:57:49.4731867-03:00</HoraDeEntrada>
+    <HoraDeSaida>2025-06-17T20:28:52.5825269-03:00</HoraDeSaida>
+    <ValorPago>0</ValorPago>
+  </comprovante>
+  <comprovante>
+    <placa>QQQ123Q</placa>
+    <HoraDeEntrada>2025-06-17T20:23:03.5392459-03:00</HoraDeEntrada>
+    <HoraDeSaida>2025-06-17T20:33:58.3044888-03:00</HoraDeSaida>
+    <ValorPago>0</ValorPago>
+  </comprovante>
+  <comprovante>
+    <placa>QQQ123Q</placa>
+    <HoraDeEntrada>2025-06-17T20:23:51.6277266-03:00</HoraDeEntrada>
+    <HoraDeSaida>2025-06-17T20:34:07.3887908-03:00</HoraDeSaida>
+    <ValorPago>0</ValorPago>
+  </comprovante>
+  <comprovante>
+    <placa>QQQ123Q</placa>
+    <HoraDeEntrada>2025-06-17T20:28:39.7498961-03:00</HoraDeEntrada>
+    <HoraDeSaida>2025-06-17T20:34:13.712208-03:00</HoraDeSaida>
+    <ValorPago>0</ValorPago>
+  </comprovante>
+  <comprovante>
+    <placa>QQQ123Q</placa>
+    <HoraDeEntrada>2025-06-17T20:44:14.5366448-03:00</HoraDeEntrada>
+    <HoraDeSaida>2025-06-17T20:44:23.0877067-03:00</HoraDeSaida>
+    <ValorPago>0</ValorPago>
+    <VagaPrioritaria>false</VagaPrioritaria>
+  </comprovante>
+  <comprovante>
+    <placa>QQQ123Q</placa>
+    <HoraDeEntrada>2025-06-17T21:12:05.4061919-03:00</HoraDeEntrada>
+    <HoraDeSaida>2025-06-17T21:12:17.3621663-03:00</HoraDeSaida>
+    <ValorPago>0</ValorPago>
+    <VagaPrioritaria>false</VagaPrioritaria>
+  </comprovante>
 </comprovantes>
