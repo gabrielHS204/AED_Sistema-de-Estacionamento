@@ -1,7 +1,7 @@
 # Documentação do código
 # Integrantes do Grupo:
 
-Arthur Souza Carvalho
+Arthur Souza Carvalho,
 Anthony Augusto Neindite Nunes da Silva,
 Gabriel Henrique da Silva Santos,
 Gardenia Iris Anselmo Rodrigues da Fonseca,
