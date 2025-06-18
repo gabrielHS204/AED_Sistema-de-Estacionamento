@@ -120,6 +120,8 @@ namespace Estacionamento
         public DateTime HoraDeSaida;
 
         public double ValorPago;
+        
+        public bool VagaPreferencial; // Indica se a vaga é preferencial ou não
 
         // Comprovantes.xml out 
         public void SalvarComprovante()
@@ -140,7 +142,8 @@ namespace Estacionamento
             new XElement("placa", Placa),
             new XElement("HoraDeEntrada", HoraDeEntrada),
             new XElement("HoraDeSaida", HoraDeSaida),
-            new XElement("ValorPago", ValorPago)
+            new XElement("ValorPago", ValorPago),
+            new XElement("VagaPreferencial", VagaPreferencial ? "Sim" : "Não")
             );
 
             doc.Root.Add(novo);
@@ -156,6 +159,9 @@ namespace Estacionamento
             Console.WriteLine($"Tempo Estacionado: {tempoEstacionado.Hours}h {tempoEstacionado.Minutes}m");
 
             Console.WriteLine($"Valor Pago: R$ {ValorPago:F2}");
+            string preferencialTexto = VagaPreferencial ? "sim" : "não";
+            Console.WriteLine($"Preferencial: {preferencialTexto}");
+
             Console.WriteLine("================================");
             Console.ReadKey();
         }
@@ -278,13 +284,13 @@ namespace Estacionamento
                     Sistema.vagas.Add(x);
                     Sistema.VagasLivres--;
                 }
-                else if ((e.VagasLivresPreferencias > 0 || e.VagasLivres > 0)&& x.Preferencial)
+                else if ((Sistema.VagasLivresPreferencias > 0 || Sistema.VagasLivres > 0) && x.Preferencial)
                 {
-                    e.vagas.Add(x);
-                    if (e.VagasLivresPreferencias > 0)
-                        e.VagasLivresPreferencias--;
+                    Sistema.vagas.Add(x);
+                    if (Sistema.VagasLivresPreferencias > 0)
+                        Sistema.VagasLivresPreferencias--;
                     else
-                        e.VagasLivres--;
+                        Sistema.VagasLivres--;
                 }
                 else
                 {
@@ -311,6 +317,9 @@ namespace Estacionamento
         {
             Console.Clear();
 
+            // Ordena os veículos por placa antes de mostrar
+            Sistema.vagas = Sistema.vagas.OrderBy(v => v.Placa).ToList();
+
             if (Sistema.VagasLivres != 100)
             {
                 foreach (var v in Sistema.vagas)
@@ -327,7 +336,7 @@ namespace Estacionamento
             }
             else
             {
-                Console.WriteLine("Não há veiculos!");
+                Console.WriteLine("Não há veiculos neste estacionamento!");
                 Console.ReadKey();
             }
             Console.ReadKey();
@@ -355,7 +364,8 @@ namespace Estacionamento
                 Placa = veiculo.Placa,
                 HoraDeEntrada = veiculo.HoraDeEntrada,
                 HoraDeSaida = DateTime.Now,
-                ValorPago = Sistema.PrecoFixo
+                ValorPago = Sistema.PrecoFixo,
+                VagaPreferencial = veiculo.Preferencial
             };
 
             Sistema.vagas.Remove(veiculo);
