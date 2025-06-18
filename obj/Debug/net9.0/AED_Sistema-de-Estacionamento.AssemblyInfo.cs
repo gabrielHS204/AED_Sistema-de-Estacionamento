@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AED_Sistema-de-Estacionamento")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4ba72a48f352540286efc383dc9f01880cc6a5fa")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2c7a242dd712ad22992fb8e90bf96d72e98d3dc4")]
 [assembly: System.Reflection.AssemblyProductAttribute("AED_Sistema-de-Estacionamento")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AED_Sistema-de-Estacionamento")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

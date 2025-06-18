@@ -208,9 +208,12 @@ namespace Estacionamento
 
                         break;
                     case 5:
+
                         //EDITAR INFORMAÇÕES DO VEÍCULO Exemplo: modelo, fiat, proprietario, 
 
-                        EditaVeículo(new Veiculo()); // Passa um novo objeto Veiculo para editar
+                        EditaVeículo(new Veiculo());
+
+                        // Passa um novo objeto Veiculo para editar
                         // APÓS EDITAR SALVAR e.vagas NO arquivo
                         break;
                     case 0:
@@ -235,7 +238,7 @@ namespace Estacionamento
 
             // INSERIR TUDO NO OBJETO X 
             Veiculo x = new Veiculo(true);
-            Console.WriteLine("Placa: ");
+            Console.Write("Placa: ");
             x.Placa = Console.ReadLine();
             Console.Write("Modelo: ");
             x.Modelo = Console.ReadLine();
@@ -266,6 +269,7 @@ namespace Estacionamento
                 {
                     e.vagas.Add(x);
                     e.VagasLivres--;
+                    Console.WriteLine($"\nBem-vindo ao Estacionamento {e.Nome} ! ");
                 }
                 else
                 {
@@ -279,7 +283,7 @@ namespace Estacionamento
                 // EXPORTANDO XML 
                 e.SalvarXML();
                 Console.ReadKey();
-                
+
             }
         }
 
@@ -287,6 +291,9 @@ namespace Estacionamento
         {
             Console.Clear();
             Estacionamento e = new Estacionamento();
+
+            // Ordena os veículos por placa antes de mostrar
+            e.vagas = e.vagas.OrderBy(v => v.Placa).ToList();
 
             if (e.VagasLivres != 100)
             {
@@ -304,7 +311,7 @@ namespace Estacionamento
             }
             else
             {
-                Console.WriteLine("Não há veiculos!");
+                Console.WriteLine("Não há veiculos neste estacionamento!");
                 Console.ReadKey();
             }
             Console.ReadKey();
@@ -378,7 +385,7 @@ namespace Estacionamento
 
             if (veiculo == null)
             {
-                Console.WriteLine("veiculo nao encontrado");
+                Console.WriteLine("Veículo não encontrado. Por favor, insira uma placa válida!");
                 Console.ReadKey();
                 return;
             }
@@ -405,7 +412,7 @@ namespace Estacionamento
 
         }
 
-        static void SalvarComprovante(Comprovante c)
+        static void SalvarComprovante(Comprovante c) // Salva Comprovantes no Comprovantes.xml
         {
 
             XDocument doc;
@@ -444,5 +451,7 @@ namespace Estacionamento
 
 
         }
+
+       
     }
 }
