@@ -1,48 +1,21 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Veiculos>
   <Veiculo>
-    <Placa>OSY4Q22</Placa>
-    <Modelo>Monza</Modelo>
-    <Marca>Chevrolet</Marca>
-    <Proprietario>Victor Dante</Proprietario>
-    <Cor>Vinho</Cor>
+    <Placa>AAAAAAA</Placa>
+    <Modelo>palio</Modelo>
+    <Marca>fiat</Marca>
+    <Proprietario>maria</Proprietario>
+    <Cor>vermelho</Cor>
     <Preferencial>true</Preferencial>
-    <HoraDeEntrada>2025-06-14T22:16:04.8348253-03:00</HoraDeEntrada>
+    <HoraDeEntrada>2025-06-19T22:20:00.3447179-03:00</HoraDeEntrada>
   </Veiculo>
   <Veiculo>
-    <Placa>QQ7789Y</Placa>
-    <Modelo>carro1</Modelo>
-    <Marca>marca1</Marca>
+    <Placa>BBBBBBB</Placa>
+    <Modelo>modelo9</Modelo>
+    <Marca>marca6</Marca>
     <Proprietario>pessoa2</Proprietario>
-    <Cor>verde</Cor>
-    <Preferencial>true</Preferencial>
-    <HoraDeEntrada>2025-06-17T19:13:36.3635082-03:00</HoraDeEntrada>
-  </Veiculo>
-  <Veiculo>
-    <Placa>A1A2A3C</Placa>
-    <Modelo>modelo1</Modelo>
-    <Marca>marca5</Marca>
-    <Proprietario>pessoa4</Proprietario>
-    <Cor>rosa</Cor>
-    <Preferencial>true</Preferencial>
-    <HoraDeEntrada>2025-06-17T20:15:03.5119386-03:00</HoraDeEntrada>
-  </Veiculo>
-  <Veiculo>
-    <Placa>B2B1B3R</Placa>
-    <Modelo>modelo8</Modelo>
-    <Marca>marca0</Marca>
-    <Proprietario>pessoa4</Proprietario>
-    <Cor>amarelo</Cor>
-    <Preferencial>false</Preferencial>
-    <HoraDeEntrada>2025-06-17T20:16:05.2634932-03:00</HoraDeEntrada>
-  </Veiculo>
-  <Veiculo>
-    <Placa>A5B5H6U</Placa>
-    <Modelo>modelo4</Modelo>
-    <Marca>marca1</Marca>
-    <Proprietario>pessoa3</Proprietario>
     <Cor>azul</Cor>
     <Preferencial>true</Preferencial>
-    <HoraDeEntrada>2025-06-17T20:44:36.5308865-03:00</HoraDeEntrada>
+    <HoraDeEntrada>2025-06-19T22:25:59.4145596-03:00</HoraDeEntrada>
   </Veiculo>
 </Veiculos>
