@@ -558,7 +558,7 @@ namespace Estacionamento // Organizar os blocos de códigos
                 case "F":
                     string preferencia;
 
-                    //Solicita ao cliente uma entrada 'n' ou 's', caso contrario a entrada será solicitada até está correta
+                    //Solicita ao usuario uma entrada 'n' ou 's', caso contrario a entrada será solicitada até está correta
                     do
                     {
                         Console.WriteLine("Digite 's' se deseja filtrar vagas preferenciais ou 'n' se deseja filtrar vagas não preferencias: ");
@@ -568,7 +568,7 @@ namespace Estacionamento // Organizar os blocos de códigos
 
                     bool preferenciaBooleana = false;
 
-                    //atribui a variavel preferenciaBoolena true ou false de acordo com a entrada do usuario
+                    //Atribui a variavel preferenciaBoolena true ou false de acordo com a entrada do usuario
                     if (preferencia == "s")
                     {
                         preferenciaBooleana = true;
