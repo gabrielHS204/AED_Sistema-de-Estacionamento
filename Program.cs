@@ -3,7 +3,7 @@ using System.Xml.Linq;
 
 namespace Estacionamento // Organizar os blocos de códigos
 {
-    
+
     //Classe de veículos do estacionamento
     public class Veiculo
     {
@@ -32,8 +32,8 @@ namespace Estacionamento // Organizar os blocos de códigos
     public class Estacionamento
     {
         public List<Veiculo> vagas = new List<Veiculo>();  // Tipo Genérico List
-        public string Endereco; 
-        public string Nome; 
+        public string Endereco;
+        public string Nome;
 
         public int VagasLivres; // Sempre alterado conforme ocupação
         public int VagasLivresPreferencias; // Sempre alterado conforme ocupação de vagas preferenciais
@@ -112,10 +112,10 @@ namespace Estacionamento // Organizar os blocos de códigos
         public void SalvarComprovante()
         {
 
-double precoPorHoras = 10;
+            double precoPorHoras = 10;
 
             TimeSpan tempoEstacionado = HoraDeSaida - HoraDeEntrada;
-            int horas = (int)Math.Ceiling(tempoEstacionado.TotalHours+(tempoEstacionado.Days)*24);
+            int horas = (int)Math.Ceiling(tempoEstacionado.TotalHours + (tempoEstacionado.Days) * 24);
             ValorPago = horas * precoPorHoras;
 
             XDocument doc;
@@ -150,8 +150,8 @@ double precoPorHoras = 10;
             Console.WriteLine($"Valor Pago: R$ {ValorPago:F2}");
             Console.WriteLine($"Preferencial: {(VagaPreferencial ? "Sim" : "Não")}");
             Console.WriteLine("================================\n");
-            
-            
+
+
         }
     }
 
@@ -556,10 +556,27 @@ double precoPorHoras = 10;
                     break;
 
                 case "F":
-                    Console.Write("Digite 's' se deseja filtrar vagas preferenciais ou 'n' se deseja filtrar vagas não preferencias: ");
-                    string preferencia = Console.ReadLine().ToLower();
+                    string preferencia;
 
-                    bool preferenciaBooleana = preferencia == "s" ? true : false;
+                    //Solicita ao cliente uma entrada 'n' ou 's', caso contrario a entrada será solicitada até está correta
+                    do
+                    {
+                        Console.WriteLine("Digite 's' se deseja filtrar vagas preferenciais ou 'n' se deseja filtrar vagas não preferencias: ");
+                        preferencia = Console.ReadLine();
+
+                    } while (preferencia != "s" && preferencia != "n");
+
+                    bool preferenciaBooleana = false;
+
+                    //atribui a variavel preferenciaBoolena true ou false de acordo com a entrada do usuario
+                    if (preferencia == "s")
+                    {
+                        preferenciaBooleana = true;
+                    }
+                    else if (preferencia == "n")
+                    {
+                        preferenciaBooleana = false;
+                    }
 
                     var filtroF = from v in Sistema.vagas// Filtra os veículos na lista Sistema.vagas onde a propriedade Preferencial é verdadeira ou falsa, com base na escolha do usuário.
                                   where v.Preferencial == preferenciaBooleana
@@ -567,13 +584,13 @@ double precoPorHoras = 10;
 
                     Console.WriteLine();
                     // Verifica se o filtro obteve algum resultado, se sim retorna os veiculos filtra, se não retorna uma mensagem de que nenhum dado foi encontrado.
-                    Console.WriteLine(filtroF.Count() > 0 ? $"Segue o(s) veículo(s) que estão em vagas prioritárias:" : "Não encontramos nenhum dado de referente ao filtro solicitado.");
+                    Console.WriteLine(filtroF.Count() > 0 ? $"Segue o(s) veículo(s) que estão em vagas prioritárias:" : "Não encontramos nem um dado de referente ao filtro solicitado.");
                     Console.WriteLine();
 
                     int f = 1;
                     foreach (var veiculo in filtroF)
                     {
-                        Console.WriteLine("==================================================");
+                        Console.WriteLine("============================================");
                         Console.WriteLine($"{f}° veículo encontrado:");
                         Console.WriteLine($"Placa: {veiculo.Placa}");
                         Console.WriteLine($"Modelo: {veiculo.Modelo}");
@@ -649,7 +666,7 @@ double precoPorHoras = 10;
                     Console.WriteLine("\nSeu veículo foi editado com sucesso!");
 
                     Console.ReadKey();
-                    
+
                 }
             }
             if (!achou) // Se somente não encontrar
@@ -660,7 +677,7 @@ double precoPorHoras = 10;
             }
 
         }
-        
-      
+
+
     }
 }

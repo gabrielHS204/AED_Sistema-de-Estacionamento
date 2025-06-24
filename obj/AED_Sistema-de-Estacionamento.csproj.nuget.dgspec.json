@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\saraa\\OneDrive\\Documentos\\GitHub\\AED_Sistema-de-Estacionamento\\AED_Sistema-de-Estacionamento.csproj": {}
+    "C:\\Users\\geova\\AED_Sistema-de-Estacionamento\\AED_Sistema-de-Estacionamento.csproj": {}
   },
   "projects": {
-    "C:\\Users\\saraa\\OneDrive\\Documentos\\GitHub\\AED_Sistema-de-Estacionamento\\AED_Sistema-de-Estacionamento.csproj": {
+    "C:\\Users\\geova\\AED_Sistema-de-Estacionamento\\AED_Sistema-de-Estacionamento.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\saraa\\OneDrive\\Documentos\\GitHub\\AED_Sistema-de-Estacionamento\\AED_Sistema-de-Estacionamento.csproj",
+        "projectUniqueName": "C:\\Users\\geova\\AED_Sistema-de-Estacionamento\\AED_Sistema-de-Estacionamento.csproj",
         "projectName": "AED_Sistema-de-Estacionamento",
-        "projectPath": "C:\\Users\\saraa\\OneDrive\\Documentos\\GitHub\\AED_Sistema-de-Estacionamento\\AED_Sistema-de-Estacionamento.csproj",
-        "packagesPath": "C:\\Users\\saraa\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\saraa\\OneDrive\\Documentos\\GitHub\\AED_Sistema-de-Estacionamento\\obj\\",
+        "projectPath": "C:\\Users\\geova\\AED_Sistema-de-Estacionamento\\AED_Sistema-de-Estacionamento.csproj",
+        "packagesPath": "C:\\Users\\geova\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\geova\\AED_Sistema-de-Estacionamento\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\saraa\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\geova\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net9.0"

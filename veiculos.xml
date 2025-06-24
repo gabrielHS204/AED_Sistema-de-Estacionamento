@@ -18,4 +18,13 @@
     <Preferencial>true</Preferencial>
     <HoraDeEntrada>2025-06-19T22:25:59.4145596-03:00</HoraDeEntrada>
   </Veiculo>
+  <Veiculo>
+    <Placa>LOPO458</Placa>
+    <Modelo>Civic G10</Modelo>
+    <Marca>Honda</Marca>
+    <Proprietario>Geovanna</Proprietario>
+    <Cor>Branco</Cor>
+    <Preferencial>false</Preferencial>
+    <HoraDeEntrada>2025-06-24T17:36:59.7056038-03:00</HoraDeEntrada>
+  </Veiculo>
 </Veiculos>
